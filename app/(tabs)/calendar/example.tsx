@@ -11,7 +11,7 @@ import React from 'react'
 import { StyleSheet, Text } from 'react-native'
 
 export default function Example() {
-  return <Text>EXAMPLE PAGE</Text>
+  return <Text>aaa</Text>
 }
 
 const styles = StyleSheet.create({
