@@ -13,7 +13,12 @@ import {
 
 export default function TabLayout() {
   return (
-    <Tabs screenOptions={{ tabBarActiveTintColor: Colors.light.primary }}>
+    <Tabs
+      screenOptions={{
+        tabBarActiveTintColor: Colors.light.primary,
+        headerShown: false,
+      }}
+    >
       <Tabs.Screen
         name="index"
         options={{

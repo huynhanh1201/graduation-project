@@ -11,6 +11,11 @@ export const UI = {
     large: 16, // "large": Dùng cho các thành phần cần bo tròn nổi bật, ví dụ tiêu đề, button chính.
   },
 
+  paddingBody: {
+    paddingRight: 15,
+    paddingLeft: 15,
+  },
+
   // Định nghĩa các kiểu bóng (shadows) để tạo hiệu ứng chiều sâu cho các thành phần.
   shadows: {
     light: {
