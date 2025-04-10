@@ -61,7 +61,7 @@ const AddBusiness = () => {
             underlineColor={Colors.light.primary}
             activeUnderlineColor={Colors.light.primary}
             style={{ marginBottom: 10, backgroundColor: '#fff' }}
-            textColor="#000"
+            textColor={Colors.light.text}
           />
           {errors.companyName && (
             <Text style={{ color: 'red', marginBottom: 10 }}>{errors.companyName}</Text>
@@ -72,7 +72,7 @@ const AddBusiness = () => {
             onPress={handleAddBusiness}
             style={{ marginTop: 10 }}
             buttonColor={Colors.light.primary}
-            textColor="#fff"
+            textColor={Colors.light.text}
           >
             Hoàn tất
           </Button>

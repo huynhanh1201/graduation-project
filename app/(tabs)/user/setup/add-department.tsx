@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useLocalSearchParams, router } from 'expo-router';
 import { Card, TextInput, Button, Text, Appbar } from 'react-native-paper';
+
 import { Colors } from '~/constants/Colors'; // Nếu bạn có file màu riêng
 
 interface FormErrors {
@@ -48,7 +49,7 @@ const AddDepartmentForm = () => {
         style={{ backgroundColor: 'transparent', elevation: 0, marginBottom: 10 }}
       >
         <Appbar.BackAction color="#000" onPress={() => router.back()} />
-        <Appbar.Content title="Thêm Phòng ban" titleStyle={{ color: '#000' }} />
+        <Appbar.Content title="Thêm Phòng ban" titleStyle={{ color: Colors.light.text }} />
       </Appbar.Header>
 
       <Card
@@ -67,7 +68,7 @@ const AddDepartmentForm = () => {
             onChangeText={setDepartmentName}
             error={!!errors.departmentName}
             mode="outlined"
-            style={{ marginBottom: 10, backgroundColor: 'transparent' }}
+            style={{ marginBottom: 10, backgroundColor: 'transparent', color: Colors.light.text }}
             outlineColor={errors.departmentName ? 'red' : '#000'}
             activeOutlineColor={Colors.light.primary}
           />
@@ -80,7 +81,7 @@ const AddDepartmentForm = () => {
             onChangeText={setDepartmentNote}
             multiline
             mode="outlined"
-            style={{ marginBottom: 10, backgroundColor: 'transparent' }}
+            style={{ marginBottom: 10, backgroundColor: 'transparent', color: Colors.light.text }}
             outlineColor={'#000'}
             activeOutlineColor={Colors.light.primary}
           />
@@ -88,6 +89,7 @@ const AddDepartmentForm = () => {
             mode="contained"
             onPress={handleAddDepartment}
             style={{ marginTop: 10, backgroundColor: Colors.light.primary }}
+            textColor={Colors.light.text}
           >
             Hoàn tất
           </Button>

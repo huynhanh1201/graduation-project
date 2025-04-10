@@ -22,7 +22,7 @@ const AddRegion = () => {
         style={{ backgroundColor: 'transparent', elevation: 0, marginBottom: 10 }}
       >
         <Appbar.BackAction color="#000" onPress={() => router.back()} />
-        <Appbar.Content title="Vùng hoạt động" titleStyle={{ color: '#000' }} />
+        <Appbar.Content title="Vùng hoạt động" titleStyle={{ color: Colors.light.text }} />
         <Link
           href={{
             pathname: '/user/setup/add-region',
@@ -48,8 +48,8 @@ const AddRegion = () => {
               borderColor: '#000',
               borderWidth: 1,
             }}
-            inputStyle={{ color: '#000' }}
-            iconColor={'#000'}
+            inputStyle={{ color: Colors.light.text }}
+            iconColor={Colors.light.text}
           />
         )}
 
@@ -74,7 +74,7 @@ const AddRegion = () => {
                         marginLeft: 15,
                       }}
                     >
-                      <Text style={{ fontSize: 18, fontWeight: 'bold', color: '#000' }}>
+                      <Text style={{ fontSize: 18, fontWeight: 'bold', color: Colors.light.text }}>
                         {item.name.charAt(0).toUpperCase()}
                       </Text>
                     </Card>
@@ -85,7 +85,7 @@ const AddRegion = () => {
           )}
           keyExtractor={item => item.id}
           ListEmptyComponent={
-            <Text style={{ textAlign: 'center', marginTop: 20 }}>Không có dữ liệu</Text>
+            <Text style={{ textAlign: 'center', marginTop: 20, color: Colors.light.text }}>Không có dữ liệu</Text>
           }
         />
       </Card>

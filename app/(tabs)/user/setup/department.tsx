@@ -51,7 +51,7 @@ const AddDepartment = () => {
               borderColor: '#000',
               borderWidth: 1,
             }}
-            inputStyle={{ color: '#000' }}
+            inputStyle={{ color: Colors.light.text }}
             iconColor={'#000'}
           />
         )}
@@ -63,7 +63,7 @@ const AddDepartment = () => {
           renderItem={({ item }) => (
             <List.Item
               title={item.name}
-              titleStyle={{ fontSize: 16, fontWeight: '600' }}
+              titleStyle={{ fontSize: 16, fontWeight: '600', color: Colors.light.text }}
               left={() => (
                 <Card
                   style={{
@@ -76,7 +76,7 @@ const AddDepartment = () => {
                     marginLeft: 15,
                   }}
                 >
-                  <Text style={{ fontSize: 18, fontWeight: 'bold', color: '#000' }}>
+                  <Text style={{ fontSize: 18, fontWeight: 'bold', color: Colors.light.text }}>
                     {item.name.charAt(0).toUpperCase()}
                   </Text>
                 </Card>
@@ -85,7 +85,7 @@ const AddDepartment = () => {
           )}
           keyExtractor={item => item.id}
           ListEmptyComponent={
-            <Text style={{ textAlign: 'center', marginTop: 20 }}>Không có dữ liệu</Text>
+            <Text style={{ textAlign: 'center', marginTop: 20, color: Colors.light.text }}>Không có dữ liệu</Text>
           }
         />
       </Card>

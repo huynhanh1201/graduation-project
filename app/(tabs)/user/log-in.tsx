@@ -52,7 +52,7 @@ const LoginScreen = () => {
         style={{ backgroundColor: 'transparent', elevation: 0, marginBottom: 10 }}
       >
         <Appbar.BackAction color="#000" onPress={() => router.push('/user')} />
-        <Appbar.Content title="Đăng nhập" titleStyle={{ color: '#000' }} />
+        <Appbar.Content title="Đăng nhập" titleStyle={{ color: Colors.light.text }} />
       </Appbar.Header>
       <Card
         style={{

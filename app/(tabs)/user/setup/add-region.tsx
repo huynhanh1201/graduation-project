@@ -42,7 +42,7 @@ const AddRegionForm = () => {
         style={{ backgroundColor: 'transparent', elevation: 0, marginBottom: 10 }}
       >
         <Appbar.BackAction color="#000" onPress={() => router.back()} />
-        <Appbar.Content title="Thêm Vùng" titleStyle={{ color: '#000' }} />
+        <Appbar.Content title="Thêm Vùng" titleStyle={{ color: Colors.light.text }} />
       </Appbar.Header>
 
       <Card style={{ flex: 1, margin: 10, backgroundColor: 'transparent', elevation: 0, shadowColor: 'transparent' }}>
@@ -55,7 +55,7 @@ const AddRegionForm = () => {
             underlineColor={Colors.light.primary}
             activeUnderlineColor={Colors.light.primary}
             style={{ marginBottom: 10, backgroundColor: '#fff' }}
-            textColor="#000"
+            textColor={Colors.light.text}
           />
           {errors.regionName && (
             <Text style={{ color: 'red', marginBottom: 10 }}>{errors.regionName}</Text>
@@ -69,7 +69,7 @@ const AddRegionForm = () => {
             underlineColor={Colors.light.primary}
             activeUnderlineColor={Colors.light.primary}
             style={{ marginBottom: 10, backgroundColor: '#fff' }}
-            textColor="#000"
+            textColor={Colors.light.text}
           />
 
           <Button
@@ -77,7 +77,7 @@ const AddRegionForm = () => {
             onPress={handleAddRegion}
             style={{ marginTop: 10 }}
             buttonColor={Colors.light.primary}
-            textColor="#fff"
+            textColor={Colors.light.text}
           >
             Hoàn tất
           </Button>

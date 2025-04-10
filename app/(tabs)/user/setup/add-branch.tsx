@@ -49,7 +49,7 @@ const AddBranchForm = () => {
         style={{ backgroundColor: 'transparent', elevation: 0, marginBottom: 10 }}
       >
         <Appbar.BackAction color="#000" onPress={() => router.back()} />
-        <Appbar.Content title="Thêm chi nhánh" titleStyle={{ color: '#000' }} />
+        <Appbar.Content title="Thêm chi nhánh" titleStyle={{ color: Colors.light.text }} />
       </Appbar.Header>
 
       <Card style={{ flex: 1, margin: 10, backgroundColor: 'transparent', elevation: 0, shadowColor: 'transparent' }}>
@@ -72,10 +72,11 @@ const AddBranchForm = () => {
               borderRadius: 5,
               backgroundColor: '#fff',
             }}
-            dropdownTextStyles={{ color: '#000' }}
-            inputStyles={{ color: '#000' }}
+            dropdownTextStyles={{ color: Colors.light.text }}
+            inputStyles={{ color: Colors.light.text }}
             search={false}
             maxHeight={200}
+
           />
           {errors.branchRegion && (
             <Text style={{ color: 'red', marginBottom: 10 }}>{errors.branchRegion}</Text>
@@ -89,7 +90,7 @@ const AddBranchForm = () => {
             style={{ marginBottom: 10, backgroundColor: '#fff' }}
             underlineColor={Colors.light.primary}
             activeUnderlineColor={Colors.light.primary}
-            textColor="#000"
+            textColor={Colors.light.text}
           />
 
           <Button
@@ -97,7 +98,7 @@ const AddBranchForm = () => {
             onPress={handleAddBranch}
             style={{ marginTop: 10 }}
             buttonColor={Colors.light.primary}
-            textColor="#fff"
+            textColor={Colors.light.text}
           >
             Hoàn tất
           </Button>

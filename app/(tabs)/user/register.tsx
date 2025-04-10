@@ -71,7 +71,7 @@ const RegisterScreen = () => {
         style={{ backgroundColor: 'transparent', elevation: 0, marginBottom: 10 }}
       >
         <Appbar.BackAction color="#000" onPress={() => router.push('/user')} />
-        <Appbar.Content title="Đăng ký" titleStyle={{ color: '#000' }} />
+        <Appbar.Content title="Đăng ký" titleStyle={{ color: Colors.light.text }} />
       </Appbar.Header>
       <Card style={{ flex: 1, margin: 10, backgroundColor: 'transparent', elevation: 0, shadowColor: 'transparent' }}>
         <Card.Content>

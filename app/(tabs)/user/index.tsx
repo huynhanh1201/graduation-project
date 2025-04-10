@@ -71,7 +71,7 @@ const HomeScreen = () => {
                 <List.Item
                   style={{ paddingHorizontal: 15 }}
                   title={item.label}
-                  titleStyle={item.isLogout ? { color: '#FF0000' } : {}}
+                  titleStyle={item.isLogout ? { color: '#FF0000' } : { color: Colors.light.text }}
                   description={item.description}
                   left={() => (
                     <List.Icon

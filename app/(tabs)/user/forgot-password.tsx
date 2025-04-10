@@ -38,7 +38,7 @@ const ForgotPasswordScreen = () => {
         style={{ backgroundColor: 'transparent', elevation: 0, marginBottom: 10 }}
       >
         <Appbar.BackAction color="#000" onPress={() => router.push('/user/log-in')} />
-        <Appbar.Content title="Quên mật khẩu" titleStyle={{ color: '#000' }} />
+        <Appbar.Content title="Quên mật khẩu" titleStyle={{ color: Colors.light.text }} />
       </Appbar.Header>
 
       <Card style={{ flex: 1, margin: 10, backgroundColor: 'transparent', elevation: 0, shadowColor: 'transparent'}}>

@@ -47,7 +47,7 @@ const AddPositionForm = () => {
         style={{ backgroundColor: 'transparent', elevation: 0, marginBottom: 10 }}
       >
         <Appbar.BackAction color="#000" onPress={() => router.back()} />
-        <Appbar.Content title="Thêm chức vụ" titleStyle={{ color: '#000' }} />
+        <Appbar.Content title="Thêm chức vụ" titleStyle={{ color: Colors.light.text }} />
       </Appbar.Header>
 
       <Card
@@ -68,7 +68,7 @@ const AddPositionForm = () => {
             underlineColor={Colors.light.primary}
             activeUnderlineColor={Colors.light.primary}
             style={{ marginBottom: 10, backgroundColor: '#fff' }}
-            textColor="#000"
+            textColor={Colors.light.text}
           />
           {errors.positionName && (
             <Text style={{ color: 'red', marginBottom: 10 }}>{errors.positionName}</Text>
@@ -82,7 +82,7 @@ const AddPositionForm = () => {
             underlineColor={Colors.light.primary}
             activeUnderlineColor={Colors.light.primary}
             style={{ marginBottom: 10, backgroundColor: '#fff' }}
-            textColor="#000"
+            textColor={Colors.light.text}
           />
 
           <Button
@@ -90,7 +90,7 @@ const AddPositionForm = () => {
             onPress={handleAddPosition}
             style={{ marginTop: 10 }}
             buttonColor={Colors.light.primary}
-            textColor="#fff"
+            textColor={Colors.light.text}
           >
             Hoàn tất
           </Button>

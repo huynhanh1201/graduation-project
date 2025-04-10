@@ -27,7 +27,7 @@ const AddEmployee = () => {
         style={{ backgroundColor: 'transparent', elevation: 0 }}
       >
         <Appbar.BackAction color="#000" onPress={() => router.back()} />
-        <Appbar.Content title="Danh sách nhân viên" titleStyle={{ color: '#000' }} />
+        <Appbar.Content title="Danh sách nhân viên" titleStyle={{ color: Colors.light.text }} />
         <Link
           href={{
             pathname: '/user/setup/add-employee',
@@ -64,8 +64,8 @@ const AddEmployee = () => {
                 borderColor: '#000',
                 borderWidth: 1,
               }}
-              inputStyle={{ color: '#000' }}
-              iconColor={'#000'}
+              inputStyle={{ color: Colors.light.primary}}
+              iconColor={Colors.light.text}
             />
           )}
 
@@ -76,7 +76,7 @@ const AddEmployee = () => {
             renderItem={({ item }) => (
               <List.Item
                 title={item.name}
-                titleStyle={{ color: '#000', fontWeight: '500' }}
+                titleStyle={{ color: Colors.light.text, fontWeight: '500' }}
                 left={() => (
                   <View
                     style={{
@@ -89,7 +89,7 @@ const AddEmployee = () => {
                       marginLeft: 15,
                     }}
                   >
-                    <Text style={{ fontSize: 18, fontWeight: 'bold', color: '#000' }}>
+                    <Text style={{ fontSize: 18, fontWeight: 'bold', color: Colors.light.text }}>
                       {item.name.charAt(0).toUpperCase()}
                     </Text>
                   </View>
@@ -103,7 +103,7 @@ const AddEmployee = () => {
             )}
             keyExtractor={item => item.id}
             ListEmptyComponent={
-              <Text style={{ textAlign: 'center', marginTop: 20, color: '#555' }}>
+              <Text style={{ textAlign: 'center', marginTop: 20, color: Colors.light.text }}>
                 Không có dữ liệu
               </Text>
             }

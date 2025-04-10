@@ -24,7 +24,7 @@ const CreateBusiness = () => {
     <>
       <Appbar.Header statusBarHeight={0} dark={false} style={{ backgroundColor: 'transparent', elevation: 0, marginBottom: 10 }}>
         <Appbar.BackAction color="#000" onPress={() => router.back()} />
-        <Appbar.Content title="Quản lý công ty" titleStyle={{ color: '#000' }} />
+        <Appbar.Content title="Quản lý công ty" titleStyle={{ color: Colors.light.text }} />
         <Link
           href={{
             pathname: '/user/setup/create-business',
@@ -58,14 +58,14 @@ const CreateBusiness = () => {
                 <List.Item
                     style={{ paddingHorizontal: 10 }}
                     title={item.label}
-                    titleStyle={{ color: '#000' }}
+                    titleStyle={{ color: Colors.light.text }}
                     left={() => (
                       <List.Icon
                         icon={() => (
                           <Ionicons
                             name={item.icon}
                             size={24}
-                            color="#000"
+                            color= {Colors.light.text}
                           />
                         )}
                       />
@@ -76,7 +76,7 @@ const CreateBusiness = () => {
                           <Ionicons
                             name="chevron-forward-outline"
                             size={20}
-                            color="#000"
+                            textColor={Colors.light.text}
                           />
                         )}
                       />

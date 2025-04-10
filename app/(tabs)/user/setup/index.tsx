@@ -31,7 +31,7 @@ const SetupScreen = () => {
         style={{ backgroundColor: 'transparent', elevation: 0, marginBottom: 10 }}
       >
         <Appbar.BackAction color="#000" onPress={() => router.back()} />
-        <Appbar.Content title="Thiết lập quản lý" titleStyle={{ color: '#000' }} />
+        <Appbar.Content title="Thiết lập quản lý" titleStyle={{ color: Colors.light.text }} />
       </Appbar.Header>
 
       <Card
@@ -74,7 +74,7 @@ const SetupScreen = () => {
                           <Ionicons
                             name="chevron-forward-outline"
                             size={20}
-                            color="#000"
+                            color={Colors.light.text}
                           />
                         )}
                       />

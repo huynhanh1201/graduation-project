@@ -87,10 +87,17 @@ const AddEmployeeForm = () => {
       <Appbar.Header
         statusBarHeight={0}
         dark={false}
-        style={{ backgroundColor: 'transparent', elevation: 0, marginBottom: 10 }}
+        style={{
+          backgroundColor: 'transparent',
+          elevation: 0,
+          marginBottom: 10,
+        }}
       >
         <Appbar.BackAction color="#000" onPress={() => router.back()} />
-        <Appbar.Content title="Thêm nhân viên" titleStyle={{ color: '#000' }} />
+        <Appbar.Content
+          title="Thêm nhân viên"
+          titleStyle={{ color: Colors.light.text }}
+        />
       </Appbar.Header>
 
       <ScrollView style={{ flex: 1 }}>
@@ -111,10 +118,12 @@ const AddEmployeeForm = () => {
               underlineColor={Colors.light.primary}
               activeUnderlineColor={Colors.light.primary}
               style={{ marginBottom: 10, backgroundColor: '#fff' }}
-              textColor="#000"
+              textColor={Colors.light.text}
             />
             {errors.employeeName && (
-              <Text style={{ color: 'red', marginBottom: 10 }}>{errors.employeeName}</Text>
+              <Text style={{ color: 'red', marginBottom: 10 }}>
+                {errors.employeeName}
+              </Text>
             )}
 
             <TextInput
@@ -126,10 +135,12 @@ const AddEmployeeForm = () => {
               underlineColor={Colors.light.primary}
               activeUnderlineColor={Colors.light.primary}
               style={{ marginBottom: 10, backgroundColor: '#fff' }}
-              textColor="#000"
+              textColor={Colors.light.text}
             />
             {errors.phoneNumber && (
-              <Text style={{ color: 'red', marginBottom: 10 }}>{errors.phoneNumber}</Text>
+              <Text style={{ color: 'red', marginBottom: 10 }}>
+                {errors.phoneNumber}
+              </Text>
             )}
 
             <TextInput
@@ -141,10 +152,12 @@ const AddEmployeeForm = () => {
               underlineColor={Colors.light.primary}
               activeUnderlineColor={Colors.light.primary}
               style={{ marginBottom: 10, backgroundColor: '#fff' }}
-              textColor="#000"
+              textColor={Colors.light.text}
             />
             {errors.email && (
-              <Text style={{ color: 'red', marginBottom: 10 }}>{errors.email}</Text>
+              <Text style={{ color: 'red', marginBottom: 10 }}>
+                {errors.email}
+              </Text>
             )}
 
             <TextInput
@@ -156,10 +169,12 @@ const AddEmployeeForm = () => {
               underlineColor={Colors.light.primary}
               activeUnderlineColor={Colors.light.primary}
               style={{ marginBottom: 10, backgroundColor: '#fff' }}
-              textColor="#000"
+              textColor={Colors.light.text}
             />
             {errors.idNumber && (
-              <Text style={{ color: 'red', marginBottom: 10 }}>{errors.idNumber}</Text>
+              <Text style={{ color: 'red', marginBottom: 10 }}>
+                {errors.idNumber}
+              </Text>
             )}
 
             {positionData.length > 0 ? (
@@ -182,6 +197,7 @@ const AddEmployeeForm = () => {
                 }}
                 search={false}
                 maxHeight={200}
+
               />
             ) : (
               <TextInput
@@ -191,7 +207,7 @@ const AddEmployeeForm = () => {
                 underlineColor={Colors.light.primary}
                 activeUnderlineColor={Colors.light.primary}
                 style={{ marginBottom: 10, backgroundColor: '#fff' }}
-                textColor="#000"
+                textColor={Colors.light.text}
               />
             )}
 
@@ -203,10 +219,12 @@ const AddEmployeeForm = () => {
               underlineColor={Colors.light.primary}
               activeUnderlineColor={Colors.light.primary}
               style={{ marginBottom: 10, backgroundColor: '#fff' }}
-              textColor="#000"
+              textColor={Colors.light.text}
             />
             {errors.startDate && (
-              <Text style={{ color: 'red', marginBottom: 10 }}>{errors.startDate}</Text>
+              <Text style={{ color: 'red', marginBottom: 10 }}>
+                {errors.startDate}
+              </Text>
             )}
 
             <Button
@@ -214,7 +232,7 @@ const AddEmployeeForm = () => {
               onPress={handleAddEmployee}
               style={{ marginTop: 10 }}
               buttonColor={Colors.light.primary}
-              textColor="#fff"
+              textColor={Colors.light.text}
             >
               Hoàn tất
             </Button>
@@ -222,7 +240,7 @@ const AddEmployeeForm = () => {
         </Card>
       </ScrollView>
     </>
-  );
+  )
 };
 
 export default AddEmployeeForm;

@@ -30,7 +30,7 @@ const ListBusiness = () => {
         style={{ backgroundColor: 'transparent', elevation: 0 }}
       >
         <Appbar.BackAction color="#000" onPress={() => router.back()} />
-        <Appbar.Content title="Doanh nghiệp" titleStyle={{ color: '#000' }} />
+        <Appbar.Content title="Doanh nghiệp" titleStyle={{ color: Colors.light.text }} />
         <Link href="/user/setup/create-business" asChild>
           <IconButton icon="plus" iconColor={Colors.light.primary} />
         </Link>
@@ -59,8 +59,8 @@ const ListBusiness = () => {
                 borderColor: '#000',
                 borderWidth: 1,
               }}
-              inputStyle={{ color: '#000' }}
-              iconColor={'#000'}
+              inputStyle={{ color: Colors.light.text }}
+              iconColor={Colors.light.text}
             />
           )}
 
@@ -70,7 +70,7 @@ const ListBusiness = () => {
             renderItem={({ item }) => (
               <List.Item
                 title={item.name}
-                titleStyle={{ color: '#000', fontWeight: '500' }}
+                titleStyle={{ color: Colors.light.text, fontWeight: '500' }}
                 left={() => (
                   <View
                     style={{
@@ -83,7 +83,7 @@ const ListBusiness = () => {
                       marginLeft: 15,
                     }}
                   >
-                    <Text style={{ fontSize: 18, fontWeight: 'bold', color: '#000' }}>
+                    <Text style={{ fontSize: 18, fontWeight: 'bold', color: Colors.light.text }}>
                       {item.name.charAt(0).toUpperCase()}
                     </Text>
                   </View>
@@ -91,7 +91,7 @@ const ListBusiness = () => {
               />
             )}
             ListEmptyComponent={
-              <Text style={{ textAlign: 'center', marginTop: 20, color: '#555' }}>
+              <Text style={{ textAlign: 'center', marginTop: 20, color: Colors.light.text }}>
                 Không có dữ liệu
               </Text>
             }

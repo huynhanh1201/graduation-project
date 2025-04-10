@@ -23,7 +23,7 @@ const AddBranch = () => {
         style={{ backgroundColor: 'transparent', elevation: 0, marginBottom: 10 }}
       >
         <Appbar.BackAction color="#000" onPress={() => router.back()} />
-        <Appbar.Content title="Chi nhánh" titleStyle={{ color: '#000' }} />
+        <Appbar.Content title="Chi nhánh" titleStyle={{ color: Colors.light.text }} />
         <Link
           href={{
             pathname: '/user/setup/add-branch',
@@ -59,8 +59,8 @@ const AddBranch = () => {
               borderWidth: 1,
             }}
             iconColor={'#000'}
-            placeholderTextColor={'#000'}
-            inputStyle={{ color: '#000' }}
+            placeholderTextColor={Colors.light.text}
+            inputStyle={{ color: Colors.light.text }}
           />
         )}
 
@@ -87,7 +87,7 @@ const AddBranch = () => {
                     style={{
                       fontSize: 18,
                       fontWeight: 'bold',
-                      color: '#000',
+                      color: Colors.light.text,
                     }}
                   >
                     {item.name.charAt(0).toUpperCase()}
@@ -98,7 +98,7 @@ const AddBranch = () => {
           )}
           keyExtractor={item => item.id}
           ListEmptyComponent={
-            <Text style={{ textAlign: 'center', marginTop: 20 }}>
+            <Text style={{ textAlign: 'center', marginTop: 20, color: Colors.light.text }}>
               Không có dữ liệu
             </Text>
           }
